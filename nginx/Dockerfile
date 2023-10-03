@@ -1,5 +1,5 @@
-# Use an ARM 64-bit (aarch64) compatible Nginx base image
-FROM arm64v8/nginx:latest  # Use the appropriate ARM 64-bit version for your architecture
+# Use the official Nginx image as the base image
+FROM nginx:latest
 
 # Update the package lists and install Certbot and its Nginx plugin
 RUN apt-get update && apt-get install -y certbot python3-certbot-nginx
